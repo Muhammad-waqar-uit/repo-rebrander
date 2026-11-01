@@ -1,0 +1,22 @@
+{
+  "name": "repo-rebrander",
+  "version": "1.0.0",
+  "description": "Rebrand every commit in local git repos under your own identity, rename the project across directories and text files, create matching private repos on your GitHub account, and push. History and file contents are preserved; only the author/committer name and email on each commit change.",
+  "type": "module",
+  "bin": {
+    "repo-rebrander": "index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "os": ["win32", "darwin", "linux"],
+  "scripts": {
+    "start": "node index.js",
+    "dry-run": "node index.js --dry-run",
+    "rebrand": "node scripts/rebrand.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": ["git", "github", "rewrite", "author", "filter-branch", "rebrand", "history", "filter-repo"],
+  "author": "",
+  "license": "MIT"
+}
